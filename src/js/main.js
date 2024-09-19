@@ -32,6 +32,14 @@ gsap.to(elementOne, {
     après un délai de 2 secondes
    ----------------------- */
 
+const elementTwo = document.querySelector("#js-exercise-2");
+
+gsap.to(elementTwo, {
+  rotation: 45,
+  duration: 2,
+  delay: 2,
+});
+
 /* -----------------------
     Exercice 3
    -----------------------
