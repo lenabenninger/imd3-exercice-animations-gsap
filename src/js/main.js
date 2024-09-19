@@ -5,12 +5,24 @@
     Installer GSAP
    ---------------------------------------------- */
 
+import gsap from "gsap";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 /* -----------------------
     Exercice 1
    -----------------------
     Déplacer l'item 1 de 100px vers la gauche
     durant 3 secondes
    ----------------------- */
+
+const elementOne = document.querySelector("#js-exercise-1");
+
+gsap.to(elementOne, {
+  x: "-100px",
+  duration: 3,
+});
 
 /* -----------------------
     Exercice 2
